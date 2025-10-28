@@ -7,6 +7,13 @@
   <meta name="author" content="Simun Bogdanovic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skriptni jezici</title>
+    <!-- Internal CSS -->
+    <style>
+      .drugi {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="./Styles.css">
 </head>
 <body>
   <h1>Zadaće:</h1>
@@ -14,6 +21,14 @@
     <li><a href="/Zadace/Zadaca1.html"target="_blank">Zadaća1</a></li>
     <li><a href=""></a></li>
   </ol>
+
+  <h2>Dodavanje CSS-a</h2>
+  <ul>
+    <li style="color: blue; ">Inline</li>
+    <li class="drugi">Internal</li>
+    <li class="treci">External</li>
+  </ul>
+
     <!-- heading elementi -->
      <h1>Naslov 1</h1>
      <h2>Naslov 2</h2>
@@ -31,11 +46,11 @@
         <br>
       <h2>Moji top 3</h2>
       <hr>
-      <h3>The Conjuring 1</h3>
+      <h3 id="Naslov">The Conjuring 1</h3>
       <p>Meni najdrazi film</p>
       <h3>The Conjuring 2</h3>
       <p> Jedan od najboljih filmova koje sam pogledao</p>
-      <h3>The Conjuring: The Devil Made Me Do It</h3>
+      <h3>The Conjuring: Last rites</h3>
       <P> </P>
 
       <!-- oblikovanje teksta -->
@@ -97,7 +112,7 @@
         <li>C</li>
        </ul>
        <!-- <small> <samp> <ims> <blockquote>-->
-        <p> 
+        <p draggable="true" > 
           Lorem <small>dolor sit amet</small>  consectetur <samp>adipisicing</samp> elit. 
         Dolor ea <ims>necessitatibus</ims>  in 
         accusantium rem sint aliquid perferendis 
