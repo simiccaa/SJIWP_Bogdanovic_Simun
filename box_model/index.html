@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box; /* box model se ne mijenja dodavanjem paddinga */
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            /* border-radius: 50%; krug*/
+            
+        }
+
+        .box{
+            background-color: blueviolet;
+            border: 5px solid black;
+            /* Margina ide od gore u smjeru kazaljke na satu */
+            margin-bottom: 50px;
+            margin-left: 50px;
+            padding: 50px;
+            border-top: 10px solid blue;
+            
+        }
+        .drugi{
+            background-color: darkgoldenrod;
+            border: 5px dashed red;
+            margin: 80px 40px 80px 40px; 
+            /* margin: 80px 40px; */
+        }
+    html{
+        background-color: darkgray;
+    }
+        .plava1{
+      background-color: lightskyblue;
+      height: 130px;
+      width: 500px;
+    }
+    .bijela1{
+        background-color: white;
+        height: 20px;
+        width: 500px;
+    }
+    .crna{
+        background-color: black;
+        width: 500px;
+        height: 50px;
+    }
+    .bijela2{
+        background-color: white;
+        height: 20px;
+        width: 500px;
+    }
+    .plava2{
+        background-color: lightskyblue;
+      height: 130px;
+      width: 500px;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Box model</h1>
+    <div class="box" >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, 
+        provident corporis sunt doloremque eaque, non praesentium architecto laboriosam eveniet porro assumenda iusto, eligendi nemo beatae debitis hic ab! Doloribus, consectetur!
+    </div>
+    <div class="drugi">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto praesentium cum mollitia ullam harum omnis officia dolorem ex exercitationem! Nulla, 
+        consequuntur earum minus aspernatur quam ut id distinctio cumque nemo.
+        Aperiam nostrum unde perferendis, asperiores sapiente exercitationem cum quam suscipit nisi fugit ipsa, obcaecati recusandae optio a
+        liquam ut facilis minima est repudiandae inventore, perspiciatis explicabo! Nam quia soluta maiores repellat?
+    </div>
+    <br>
+    <h1>Zastava Botsvane</h1>
+    <div class="plava1"></div>
+    <div class="bijela1"></div>
+    <div class="crna"></div>
+    <div class="bijela2"></div>
+    <div class="plava2"></div>
+    
+
+</body>
+</html>
