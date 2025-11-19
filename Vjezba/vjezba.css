@@ -1,0 +1,42 @@
+#boja{
+    color: white;
+    background-color: lightskyblue;
+}
+div{
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    padding: 1%;
+    border-radius: 5%;
+}
+*{
+    background-color: lightgray;
+}
+p{
+    background-color: white;
+    
+}
+#pad{
+    padding-bottom: 40%;
+}
+h2{
+    background-color: white
+}
+#Twitter{
+    align-items: end;
+}
+img{
+    width: 400px;
+}
+#prvi{
+    margin-bottom: 20px;
+}
+#padd{
+    padding-bottom: 5%;
+}
+#paddi{
+    padding-bottom: 50%;
+}
+#drugi{
+    margin-top: 20px;
+}
