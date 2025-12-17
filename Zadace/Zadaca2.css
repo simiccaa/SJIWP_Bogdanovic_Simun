@@ -1,0 +1,78 @@
+.okvir{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 6px solid black;
+    position: relative;
+}
+
+
+.olovka{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 600px;
+}
+.plava{
+    width: 150px;
+    height: 150px;
+    background-color: #226AA9;
+    position:absolute;
+    top: 70px;
+    
+}
+.trokut{
+    width: 0px;
+    height: 0px;
+    border-top: 75.5px solid transparent;
+    border-bottom: 75.5px solid transparent;
+    border-left: 100px solid #DEB467;
+    position: absolute;
+    left: 150px;
+    z-index: 1;
+}
+.crni{
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 60px solid #000000;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    top: 36px;
+    left: 195px;
+    z-index: 1;
+}
+
+
+
+.bijela{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    border: 5px solid black;
+}
+.profilna{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    border-radius: 50%;
+}
+.podaci{
+    position: absolute; 
+    top: 20px;
+}
+p{
+    position: absolute;
+    left: 140px;
+}
+.instagram{
+    margin-left: 10px;
+}
+strong{
+    font-size: 25px;
+}
