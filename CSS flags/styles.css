@@ -1,0 +1,234 @@
+.crveni{
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    position: relative;
+}
+.plavi{
+    width: 500px;
+    height: 145px;
+    position: absolute;
+    background-color: blue;
+    top: 75px;
+}
+.bijeli{
+background-color: white;
+width: 135px;
+height: 135px;
+position: relative;
+left: 173px;
+top: 5px;
+border-radius: 50%;
+/* z-index: */
+}
+
+.plavi1{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    background-color: blue;
+    position: relative;
+}
+.bijeli1{
+    width: 500px;
+    height: 90px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+}
+.bijeli2{
+    height: 300px;
+    width: 70px;
+    background-color: white;
+    position: absolute;
+    left: 110px;
+}
+.crveni1{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+}
+.crveni2{
+    height: 300px;
+    width: 40px;
+    background-color: red;
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+}
+.zelena{
+    background-color: teal;
+    width: 500px;
+    height: 300px;
+    position: relative;
+   z-index: -2;
+}
+.trokut{
+    width: 0px;
+    height: 0px;
+    border-top: 150px solid transparent;
+    border-bottom: 150px solid transparent;
+    border-left: 200px solid black;
+    z-index: 1;
+}
+.yellow{
+    width: 500px;
+    height: 100px;
+    background-color: gold;
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+}
+
+
+/* .white{
+    width: 180px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+.red{
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    
+    position: absolute;
+}
+.trokut1{
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 250px solid white;
+}
+.trokut2{
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 250px solid white;
+}
+.trokut3{
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 250px solid white;
+}
+.trokut4{
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 250px solid white;
+}
+.trokut5{
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 250px solid white;
+} */
+
+
+.green{
+    height: 300px;
+    width: 500px;
+    background-color: green;
+    position: relative;
+}
+
+.crvena{
+    height: 300px;
+    width: 167px;
+    background-color: red;
+    position: absolute;
+    left: 167px;
+}
+
+.zuta{
+    height: 300px;
+    width: 167px;
+    background-color: gold;
+    position: absolute;
+    left: 334px;
+}
+.zvijezda{
+    width: 120px;
+    height: 120px;
+    background: gold;
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+
+}
+
+
+
+.crven{
+    width: 500px;
+    height: 300px;
+    background-color: red;
+    z-index: 1;
+    position: relative;
+}
+
+.krug_b{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 60px;
+    top: 50px;
+}
+
+.krug_c{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 115px;
+    top: 76px;
+}
+
+.zvijezda_b{
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    background-color: white;
+    position: absolute;
+    transform: rotate(-20deg);
+    left: 253px;
+    top: 90px;
+}
+
+

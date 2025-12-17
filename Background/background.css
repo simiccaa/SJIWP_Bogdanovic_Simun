@@ -1,0 +1,65 @@
+html{
+    background-image: linear-gradient(to bottom,  #f5edfa,#402250 );
+    height: 100%;
+}
+div{
+    box-shadow: 4px 30px 83px -18px rgba(0,0,0,0.68);
+}
+.prvi{
+    background-color: #402250;
+    width: 400px;
+    height: 150px;
+    position: relative;
+    left: 700px;
+    top: 200px;
+    border-radius: 110px;
+    
+}
+.drugi{
+    background-color: #6E3482;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 710px;
+    top: 270px;
+    border-radius: 110px;
+}
+.p1{
+    color: white;
+    position: absolute;
+    left: 50px;
+    font-size: 13px;
+}
+.p2{
+    color: black;
+    position: absolute;
+    left: 50px;
+    font-size: 13px;
+}
+.treci{
+    background-color: #A56ABD;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 710px;
+    top: 340px;
+    border-radius: 110px;
+}
+.cetvrti{
+    background-color: #E7DBEF;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 710px;
+    top: 410px;
+    border-radius: 110px;
+}
+.peti{
+    background-color: #F5EBFA;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+    left: 710px;
+    top: 480px;
+    border-radius: 110px;
+}
