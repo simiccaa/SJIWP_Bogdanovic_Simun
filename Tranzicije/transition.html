@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranzicije</title>
+    <style>
+        div{
+            width: 250px;
+            height: 250px;
+            background-color: chocolate;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-delay: 0s;
+            transition-timing-function: ease-in-out; */
+            transition: all 2s ease;
+            
+        }
+        div:hover{
+            width: 750px;
+            height: 750px;
+            background-color: gold;
+            transform: rotate(360deg) translateX(200px);
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Tranzicije</h1>
+    <div></div>
+</body>
+</html>
