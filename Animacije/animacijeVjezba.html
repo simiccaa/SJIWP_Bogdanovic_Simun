@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba_Animacija</title>
+    <style>
+        html{
+            background-color: #040716;
+        }
+         .krug{
+            width: 40px;
+            height: 40px;
+            border: 4px solid #fcd779;
+            border-top: 4px solid #040716;
+            margin-top: 200px;
+            margin-left: 500px;
+            border-radius: 50%;
+            transition: transform 2s; 
+         } 
+
+        
+        .kocka{
+             width: 40px;
+            height: 40px;
+            border: 4px solid aqua;
+            margin-top: 200px;
+            margin-left: 500px;
+            box-shadow: 0 0 8px aqua, 0 0 8px aqua inset;
+            animation-duration: 3s;
+            animation-name: spin;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            
+        }
+        .krug:hover{
+            animation: 1s spinner ease-in-out infinite running;
+            animation-timing-function: linear;
+        }
+        @keyframes spinner {
+            0%{
+                transform: rotate(-360deg);
+
+            }
+        }
+
+        @keyframes spin {
+            0%{
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            33%{
+                transform: rotateX(180deg) rotateY(0deg) rotateZ(0deg);
+            }
+            66%{
+                transform: rotateX(180deg) rotateY(180deg) rotateZ(0deg);
+            }
+            100%{
+                transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="krug"></div> 
+    <div class="kocka"></div>
+</body>
+</html>
