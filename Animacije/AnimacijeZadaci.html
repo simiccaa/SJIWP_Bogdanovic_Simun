@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacije Zadaci</title>
+    <style>
+
+        html{
+            background-color: white;
+        }
+        .gumb{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 20px;
+            margin-top: 120px;
+            margin-left: 120px;
+            border-radius: 50%;
+            animation: 2s gumb ease infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            
+
+        }
+        p{
+            margin-top: 75px;
+        }
+
+        @keyframes gumb {
+            0%{
+                scale: 1;
+
+            }
+            25%{
+                scale: 1.25;
+            }
+            50%{
+                scale: 1.5;
+            }
+            75%{
+                scale: 1.75;
+            }
+            100%{
+                scale: 2;
+            }
+        }
+
+        .boje{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-left: 70px;
+            animation: 4s boje ease infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes boje{
+            0%{
+                background-color: red;
+            }
+            33.333%{
+                background-color: blue;
+            }
+            66.666%{
+                background-color: green;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+
+        .krug{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            margin-top: 50px;
+            margin-left: 50px;
+            border-radius: 50%;
+            animation: 3s pomak ease-in-out infinite;
+            animation-timing-function: linear;
+            
+        }
+        
+        @keyframes pomak{
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(100px);
+            }
+        }
+
+        .hover{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5rem;
+            margin-top: 100px;
+            margin-left: 200px;
+            
+        }
+        
+        .hover:hover{
+            scale: 1.5;
+            transition-duration: 0.5s ;
+            background-color: purple;
+            
+        }
+        
+        .rotate{
+            width: 200px;
+            height: 200px;
+            background-color: chartreuse;
+            transform: rotate(360deg);
+            animation: 2s krug ease-in-out infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes krug{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                
+            }
+        }
+        .okreni{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+           border-radius: 50%; 
+           margin-top: 5px;
+           border: 2px solid red;
+           border-bottom: 4px solid white;
+            animation: 1s spinner ease-in-out infinite running;
+            animation-timing-function: linear;
+            position: relative;
+        }
+        @keyframes spinner{
+            0%{
+                transform: rotate(360deg);
+            }
+        }
+        .mali{
+            position: absolute;
+            width: 190px;
+            height: 200px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>zadatak 1</h1>
+    <div class="gumb">
+        <div><p>Klikne me</p></div>
+    </div>
+    <br><br><br><br><br><br>
+    <h1>zadatak 2</h1>
+    <div class="boje"></div>
+    <br><br>
+    <h1>zadatak 3</h1>
+    <div class="krug"></div>
+    <br><br>
+    <h1>Zadatak 4</h1>
+    <div class="hover">
+        <div><p>tekst</p></div>
+    </div>
+    <br><br>
+    <h1>Zadatak 5</h1>
+    <div class="rotate"></div>
+    <br><br>
+    <h1>zadatak 6</h1>
+    <div class="okreni">
+        <div class="mali"></div>
+    </div>
+    <h1>Zadatak 7</h1>
+    <div></div>
+    <h1>Zadatak 8</h1>
+    <div></div>
+</body>
+</html>
