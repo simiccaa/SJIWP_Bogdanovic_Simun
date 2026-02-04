@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ispitna</title>
+    <style>
+        html{
+            background-color: white;
+        }
+        .lampa{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            animation: 1.5s lampa infinite;
+            
+        }
+        @keyframes lampa {
+            0%{
+                background-color: white;
+            }
+            25%{
+                background-color: red;
+            }
+            50%{
+                background-color: white;
+            }
+            75%{
+                background-color: red;
+            }
+            100%{
+                background-color: white;
+            }
+
+        }
+
+
+        .klizanje{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            color: white;
+            margin-left: 200px;
+            font-size: 1.5rem;
+
+        }
+        p{ 
+            
+            animation:2s tekst infinite ;
+            animation-timing-function: linear;
+            
+        }
+
+
+        @keyframes tekst {
+            0%{
+                transform: translateX(-100px);
+            }
+            100%{
+                
+                transform:translateX(80px)
+            }
+        }
+
+
+        .oblik{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            animation: 3s oblik  infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes oblik {
+            0%{
+                border-radius: 0%;
+            }
+            100%{
+                border-radius: 100%;
+            }
+        }
+
+        .hover{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+
+        .hover:hover{
+            
+            animation: 0.4s hover;
+        }
+        @keyframes hover {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(90deg);
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Zadatak 1</h1>
+    <div class="lampa"></div>
+    <br><br><br>
+    <h1>Zadatak 2</h1>
+    <div class="klizanje">
+        <div>
+            <p>Text</p>
+        </div>
+    </div>
+    <h1>zadatak 3</h1>
+        <div class="oblik"></div>
+        
+        <h1>Zadatak 4</h1>
+        <div class="hover"></div>
+
+        <br><br>
+        <h1>Zadatak 5</h1>
+        
+</body>
+</html>
