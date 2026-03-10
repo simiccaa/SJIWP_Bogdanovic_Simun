@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+      padding: 0;
+      margin: 10px;
+      
+    }
+
+    .container{
+    margin: 20px;
+    
+    height: 50vh;
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+    }
+     p{
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 40px;
+        font-size: 25px;
+    }
+        .a4{
+        
+        position: relative;
+        background-color: #606060;
+        border-radius: 5%;
+        color: white;
+        margin: 10px;
+        
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .b4{
+        
+        position: relative;
+        background-color: #606060;
+        border-radius: 5%;
+        color: white;
+        margin: 10px;
+        
+      grid-column-start: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .c4{
+        
+        position: relative;
+        background-color: #606060;
+        border-radius: 5%;
+        color: white;
+        margin: 10px;
+       
+      grid-row-start: 2;
+    }
+    .d4{
+        
+        position: relative;
+        background-color: #606060;
+        border-radius: 5%;
+        color: white;
+        margin: 10px;
+         
+      grid-row-start: 2;
+    }
+    .e4{
+        position: relative;
+        background-color: #606060;
+        border-radius: 5%;
+        color: white;
+        margin: 10px;
+      
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    
+    </style>
+</head>
+<body>
+    <h2>zad 6</h2>
+    <div class="container">
+        <div class="a4"><p>A</p></div>
+        <div class="b4"><p>B</p></div>
+        <div class="c4"><p>C</p></div>
+        <div class="d4"><p>D</p></div>
+        <div class="e4"><p>E</p></div>
+        
+    </div>
+</body>
+</html>
