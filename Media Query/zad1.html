@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 0vh;
+    margin: 0;
+}
+.flex-container{
+    border: black 3px;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex-container > *, section{
+    padding: 10px;
+}
+main{
+    display: flex;
+    height: 80vh;
+    flex: 0 100%;
+    flex-wrap: wrap;
+}
+section{
+    background-color: #eee;
+    flex: 0 24%;
+}
+/* Deskotop */
+@media (min-width: 1023px) {
+    section:first-child{
+        background-color:salmon;
+        flex: 0 25%;
+        height: 100%;
+    }
+}
+@media (min-width: 1023px) {
+    section.drugi{
+        background-color:orange;
+        flex: 0 25%;
+        height: 100%;
+    }
+    section.treci{
+        background-color:khaki;
+        flex: 0 25%;
+        height: 100%;
+    }
+}
+@media (min-width: 1023px) and (min-width: 480px){
+    section:last-child{
+        background-color:springgreen;
+        flex: 0 25%;
+        height: 100%;
+    }
+}
+@media (max-width: 1023px) and (min-width: 480px) {
+    section:first-child{
+        background-color:salmon;
+        flex: 0 50%;
+        height: 50%;
+    }
+}
+@media (max-width: 1023px) and (min-width: 480px) {
+    section.drugi{
+        background-color:orange;
+        flex: 0 50%;
+        height: 50%;
+    }
+    section.treci{
+        background-color:khaki;
+        flex: 0 50%;
+        height: 50%;
+    }
+}
+@media (max-width: 1023px) and (min-width: 480px) {
+    section:last-child{
+        background-color:springgreen;
+        flex: 0 50%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    section:first-child{
+        background-color:salmon;
+        flex: 0 100%;
+        height: 24%;
+    }
+}
+@media (max-width: 479px) {
+    section{
+        background-color:orange;
+        flex: 0 100%;
+        height: 24%;
+    }
+    section.treci{
+        background-color:khaki;
+        flex: 0 100%;
+        height: 24%;
+    }
+}
+@media (orientation: landscape) and (max-width: 479px) {
+    section.cetvrti{
+        background-color:springgreen;
+        flex: 0 100%;
+        height: 24%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="flex-container"></div>
+    <main>
+        <section>1</section>
+        <section class="drugi">2</section>
+        <section class="treci">3</section>
+        <section class="cetvrti">4</section>
+    </main>
+    
+    
+</body>
+</html>
