@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 2</title>
+    <style>
+body{
+    margin: 0;
+}
+.flex-container{
+    border: solid 10px black;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section{
+    margin: 0;
+}
+header{
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+footer{
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+main{
+    display: flex;
+    height: 80vh;
+    flex: 0 100%;
+    flex-wrap: wrap;
+}
+@media (max-width: 420px) {
+    section:first-child{
+        display: flex;
+        background-color:white;
+        flex: 0 100%;
+        height: 19%;
+        margin: 0;
+        justify-content: center;
+}
+    section{
+        display: flex;
+        background-color:yellow;
+        flex: 0 100%;
+        height: 19%;
+        margin: 0;
+        justify-content: center;
+    }
+    section:last-child{
+        display: flex;
+        background-color:lightgreen;
+        flex: 0 100%;
+        height: 19%;
+        margin: 0;
+        justify-content: center;
+    }
+    footer{
+        background-color:cyan;
+        flex: 0 100%;
+        height: 10%;
+        margin: 0;
+    }
+    Header{
+        background-color:indianred;
+        flex: 0 100%;
+        height: 10%;
+        margin: 0;
+    }
+}
+
+@media(max-width: 1020px) and (min-width: 421px) {
+    section:first-child{
+        display: flex;
+        background-color:white;
+        flex: 0 100%;
+        height: 24%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+}
+    section{
+        display: flex;
+        background-color:yellow;
+        flex: 0 50%;
+        height: 24%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    section:last-child{
+        display: flex;
+        background-color:lightgreen;
+        flex: 0 50%;
+        height: 24%;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        background-color:cyan;
+        flex: 0 100%;
+        height: 10%;
+        margin: 0;
+        align-items: center;
+    }
+    Header{
+        background-color:indianred;
+        flex: 0 100%;
+        height: 10%;
+        align-items: center;
+    }
+}
+
+@media(min-width: 1021px){
+    section:first-child{
+        display: flex;
+        background-color:white;
+        flex: 0 50%;
+        height: 100%;
+        margin: 0;
+        justify-content: center;
+        order: 2;
+       
+}
+    section{
+        display: flex;
+        background-color:yellow;
+        flex: 0 25%;
+        height: 100%;
+        margin: 0;
+        justify-content: center;
+        order: 1;
+        
+    }
+    section:last-child{
+        display: flex;
+        background-color:lightgreen;
+        flex: 0 25%;
+        height: 100%;
+        margin: 0;
+        justify-content: center;
+        order: 3;
+        
+    }
+    footer{
+        background-color:cyan;
+        flex: 0 100%;
+        height: 10%;
+        margin: 0;
+        align-items: center;
+    }
+    Header{
+        background-color:indianred;
+        flex: 0 100%;
+        height: 10%;
+        align-items: center;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+     <div class="flex-container">
+     <header>Header</header>
+    <main>
+        <section>Main</section>
+        <section>Left</section>
+        <section>Right</section>
+    </main>
+    <footer>Footer</footer>
+    </div>
+</body>
+</html>
