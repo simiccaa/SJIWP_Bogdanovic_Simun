@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad1</title>
+    <style>
+        body{
+            padding: 0;
+            gap: 0;
+        }
+        .container{
+            gap: 0;
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    gap: 0px;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    }
+    .flex-container > *, section{
+        border: black solid;
+    gap: 0;
+    padding: 0;
+}
+section{
+    gap: 0;
+    height: 100px;
+    width: 100px;
+    align-content: center;
+}
+
+main{
+    gap: 0;
+    display: grid;
+    
+}
+@media (min-width: 1023px) {
+    .container{
+        gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    section{
+        gap: 0;
+        width: 150px;
+        height: 150px;
+    }
+ .a{
+    gap: 0;
+        grid-row-start: 1;
+    }
+    .b{
+        gap: 0;
+        grid-row-start: 1;
+    }
+    .c{
+        gap: 0;
+        grid-row-start: 1;
+    }
+    .d{
+        gap: 0;
+       grid-row-start: 1;
+    } 
+    .e{
+        gap: 0;
+       grid-row-start: 2;
+    }
+    .f{
+        gap: 0;
+       grid-row-start: 2;
+    } 
+    .g{
+        gap: 0;
+       grid-row-start: 2;
+    } 
+    .h{
+        gap: 0;
+       grid-row-start: 2;
+    }  
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    section{
+        width: 400px;
+        height: 100px;
+    }
+    .a{
+        grid-row-start: 1;
+        gap: 0;
+    }
+    .b{
+        grid-row-start: 1;
+        gap: 0;
+    }
+    .c{
+        grid-row-start: 2;
+        gap: 0;
+    }
+    .d{
+        grid-row-start: 2;
+        gap: 0;
+    }
+
+}
+@media (max-width: 768px) {
+    .container{
+        gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    section{
+        gap: 0;
+        width: 400px;
+        height: 100px;
+    }
+    
+    .a{
+        grid-row-start: 1;
+    }
+    .b{
+        grid-row-start: 2;
+    }
+    .c{
+        grid-row-start: 3;
+    }
+    .d{
+        grid-row-start: 4;
+    }
+    .e{
+        grid-row-start: 5;
+    }
+    .f{
+        grid-row-start: 6;
+    }
+    .g{
+        grid-row-start: 7;
+    }
+    .h{
+        grid-row-start: 8;
+    }
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      <main>
+        <section class="a">Proizvod 1</section>
+        <section class="b">Proizvod 2</section>
+        <section class="c">Proizvod 3</section>
+        <section class="d">Proizvod 4</section>
+        <section class="e">Proizvod 5</section>
+        <section class="f">Proizvod 6</section>
+        <section class="g">Proizvod 7</section>
+        <section class="h">Proizvod 8</section>
+      </main>
+    </div>
+</body>
+</html>

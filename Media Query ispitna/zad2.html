@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad3</title>
+    <style>
+        
+        .container{
+            gap: 0;
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    }
+    .flex-container > *, section{
+        border: black solid 2px;
+    gap: 0;
+    padding: 0;
+}
+section{
+    gap: 0;
+    height: 100px;
+    width: 100px;
+    align-content: center;
+}
+
+main{
+    gap: 0;
+    display: grid;
+    
+}
+@media (min-width: 1023px) {
+    .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    section{
+        gap: 0;
+        width: 170px;
+        height: 170px;
+    }
+ .a{
+        grid-row-start: 1;
+    }
+    .b{
+        grid-row-start: 1;
+    }
+    .c{
+        grid-row-start: 1;
+    }
+    .d{
+       grid-row-start: 2;
+    } 
+    .e{
+       grid-row-start: 2;
+    }
+    .f{
+       grid-row-start: 2;
+    } 
+    .g{
+       grid-row-start: 3;
+    } 
+    .h{
+       grid-row-start: 3;
+    }  
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    section{
+        width: 400px;
+        height: 100px;
+    }
+    .a{
+        grid-row-start: 1;
+    }
+    .b{
+        grid-row-start: 1;
+    }
+    .c{
+        grid-row-start: 2;
+    }
+    .d{
+        grid-row-start: 2;
+    }
+
+}
+@media (max-width: 768px) {
+    .container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    section{
+        width: 400px;
+        height: 100px;
+    }
+    
+    .a{
+        grid-row-start: 1;
+    }
+    .b{
+        grid-row-start: 2;
+    }
+    .c{
+        grid-row-start: 3;
+    }
+    .d{
+        grid-row-start: 4;
+    }
+    .e{
+        grid-row-start: 5;
+    }
+    .f{
+        grid-row-start: 6;
+    }
+    .g{
+        grid-row-start: 7;
+    }
+    .h{
+        grid-row-start: 8;
+    }
+
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      <main>
+        <section class="a"> 1</section>
+        <section class="b"> 2</section>
+        <section class="c"> 3</section>
+        <section class="d"> 4</section>
+        <section class="e"> 5</section>
+        <section class="f"> 6</section>
+        <section class="g"> 7</section>
+        <section class="h"> 8</section>
+         <section class="i"> 9</section>
+        <section class="j"> 10</section>
+        <section class="k"> 11</section>
+        <section class="l"> 12</section>
+      </main>
+    </div>
+</body>
+</html>
