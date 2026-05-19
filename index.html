@@ -2,338 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Moja web stranica">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Simun Bogdanovic">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skriptni jezici</title>
-    <!-- Internal CSS -->
+    <title>Moja osobna web stranica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-      .drugi {
-        color: red;
-      }
+body{
+    background-color: darkgray;
+}
+.pb-2{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+.contact{
+    margin-left: 700px;
+}
+
     </style>
-    <link rel="stylesheet" href="./Styles.css">
 </head>
 <body>
-  <h1>Zadaće:</h1>
-  <ol>
-    <li><a href="/Zadace/Zadaca1.html"target="_blank">Zadaća1</a></li>
-    <li><a href="/Zadace/Zadaca2.html" target="_blank">Zadaća2</a></li>
-    <li><a href="Galerija/filmovi.html" target="_blank">Galerija</a></li>
-    
-  </ol>
-
-  <h2>Dodavanje CSS-a</h2>
-  <ul>
-    <li style="color: blue; ">Inline</li>
-    <li class="drugi">Internal</li>
-    <li class="treci">External</li>
-  </ul>
-
-    <!-- heading elementi -->
-     <h1>Naslov 1</h1>
-     <h2>Naslov 2</h2>
-     <h3>Naslov 3</h3>
-     <h4>Naslov 4</h4>
-     <h5>Naslov 5</h5>
-     <h6>Naslov 6</h6>
-
-     <!-- paragraft element -->
-      <!-- break element -->
-       <!-- hr element -->
-      <p>Lorem ipsum dolor sit amet consectetur <br> <hr>  adipisicing elit. Suscipit natus dolore asperiores facere inventore placeat eligendi ipsum dignissimos! Ipsa quis nemo labore quae, ullam ducimus voluptas voluptatum qui voluptate. Quibusdam!
-      Eveniet ea laboriosam voluptatum, obcaecati placeat dolore! Sapiente suscipit praesentium quis, debitis minima neque omnis distinctio modi, nulla corrupti consequatur cumque voluptatum? Eum quam facere labore beatae molestias eius reiciendis.</p>
-        <h1>Najbolji filmovi</h1>
-        <br>
-      <h2>Moji top 3</h2>
-      <hr>
-      <h3 id="Naslov">The Conjuring 1</h3>
-      <p>Meni najdrazi film</p>
-      <h3>The Conjuring 2</h3>
-      <p> Jedan od najboljih filmova koje sam pogledao</p>
-      <h3>The Conjuring: Last rites</h3>
-      <P> </P>
-
-      <!-- oblikovanje teksta -->
-       <p>  Mi smo <strong> 3.E razred</strong>. Idemo u <em>Tehničku školu </em>. <mark> Razrednik</mark> nam je <sub> prof. </sub> <sup> Benić</sup>. Ima nas <del>24</del> 26 u razredu. </p>
-       <pre>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Dolor ea necessitatibus in 
-        accusantium rem sint aliquid perferendis 
-        iste explicabo veritatis error 
-        delectus vero hic molestias, quas adipisci architecto atque pariatur?
-       </pre>
-       <!-- liste, ul - unordered liste, ol - ordered liste, dl - definition liste -->
-       <h2>Voćni desert u čaši</h2>
-
-       <h3>Sastojci:</h3>
-       <ul type="circle">
-        <li>230 g kreme za kremšnite</li>
-        <li>500 ml hladnog mlijeka</li>
-        <li>3-4 žlice pekmeza od višanja</li>
-       </ul>
-       <h3>Priprema</h3>
-       <ol type="I" start="2">
-        <li>Prah za kremu pomiješati sa pola litre hladnog mlijeka te miksati 2-3 minute dok se ne dobije jednolična krema.</li>
-        <li>Pekmez od višanja rastopiti na blagoj vatri i ohladiti.</li>
-        <li>U desertne čaše rasporediti sloj pripremljene kreme pa žlicu i pol voćnog nadjeva te ponoviti još jednom postupak i završiti sa voćnim slojem. Posipati nasjeckanim pistacijem i staviti u hladnjak na hlađenje.</li>
-       </ol>
-
-       <h2>Definiton liste</h2>
-       <dl>
-        <dt>Struja</dt>
-        <dd>Usmjereno gibanje elektrona kroz vodič</dd>
-        <dt>Napon</dt>
-        <dd>Razlika potencijala između dvije točke</dd>
-       </dl>
-       
-
-       <h2>Nested liste</h2>
-       <ul>
-        <li>A</li>
-        <li>B</li>
-        <ol>
-          <li>B1</li>
-          <li>B2</li>
-          <ul>
-            <li>B2a</li>
-            <ol>
-              <li>B2aa</li>
-              <li>B2ab</li>
-            </ol>
-            <li>B2b</li>
-            <li>B2c</li>
+<!-- navbar -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">O meni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-          <li>B3</li>
-          <ul>
-            <li>B31</li>
-            <li>B32</li>
-          </ul>
-        </ol>
-        <li>C</li>
-       </ul>
-       <!-- <small> <samp> <ims> <blockquote>-->
-        <p draggable="true" > 
-          Lorem <small>dolor sit amet</small>  consectetur <samp>adipisicing</samp> elit. 
-        Dolor ea <ims>necessitatibus</ims>  in 
-        accusantium rem sint aliquid perferendis 
-        iste explicabo veritatis error
-         <blockquote cite="https://www.huxley.net/bnw/four.html">
-    <p>
-      Words can be like X-rays, if you use them properly—they’ll go through
-      anything. You read and you’re pierced.
-        <details></details>  delectus vero hic molestias, quas adipisci architecto atque pariatur?
-        </p>
+<!-- hero -->
+<div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Osnovne informacije o meni</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Zovem se Šimun Bogdanović, živim u Slavonskom Brodu, idem u Tehničku školu Slavonski Brod. U slobodno vrijeme se volim družiti s prijateljima i obitelji, igrati video ili društvene igre, te svirati klavir. </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button> 
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
+        </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5"> 
+            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"  class="img-fluid border rounded-3 shadow-lg mb-4"
+                alt="Example image" height="200" width="270" > </div>
+    </div>
+</div>
+<!-- Feature(hoby) -->
+<div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2">Moji hobiji</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+            <div>
+               <img src="./family.svg" alt="obitelj" height="35"> </div>
+            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+            <p>Provodit vrijeme s obitelji mi je najbolji dio bilo kojeg dana. Što god radili meni bude super. Kartamo, pričamo družimo se, šta god radimo to radimo s ljubavi.</p> 
+        </div>
+        <div class="feature col">
+            <div>
+                <img src="./piano.svg" alt="klavir" height="35">  </div>
+            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+            <p>Klavir sviram kad mi je dosadno, da malo ubijem vrijeme i da se opustim. Završio sam osnovnu glazbenu školu ali sam krenuo svirati s voljom tek nakon što sam završio.</p> 
+            
+        </div>
+        <div class="feature col">
+            <div>
+                <img src="./volleyball.svg" alt="odbojka" height="35"></div>
+            <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+            <p>Odbojku volim igrat s prijateljima, ali ne i zaprave igrat. Volim kad se mogu zezat a da nema posljdica ako zeznem, to više igrat ovako radi zabave nego da igram kao sport.</p> 
+            
+        </div>
+    </div>
+</div>
+<!-- forma -->
 
-        <ol type="I">
-          <li>Backgroundskills</li>
-          <ol type="A">
-            <li>Unix Commands</li>
-            <li>Vim text editor</li>
-          </ol>
-          <li>HTML</li>
-          <ol type="A">
-            <li>Minimal page</li>
-            <li>Headings</li>
-            <li>Tags</li>
-            <li>Lists</li>
-            <ol type="i">
-              <li>Unordered</li>
-              <li>Ordered</li>
-              <li>Definition</li>
-              <li>Nested</li>
-            </ol>
-            <li>Links</li>
-            <ol type="i">
-              <li>Absolute</li>
-              <li>Relative</li>
-            </ol>
-            <li>Images</li>
-          </ol>
-          <li>CSS</li>
-          <ol type="A">
-            <li>Anatomy</li>
-            <li>Basic Selectors</li>
-            <ol type="i">
-              <li>Elment</li>
-              <li>Class</li>
-              <li>ID</li>
-              <li>Group</li>
-            </ol>
-            <li>The DOM</li>
-            <li>Advanced Selectors</li>
-            <li>Box model</li>
-          </ol>
-          <li>Programing</li>
-          <ol type="A">
-            <li>Python</li>
-            <li>JavaScript</li>
-          </ol>
-          <li>Database</li>
-          <ol type="A">
-            <li>Flat File</li>
-            <li> Relational</li>
-          </ol>
-        </ul>
-        <!-- Anchor elemet -->
-        <h2> Anchor element</h2>
-        <p>Web stranicu škole možete vidjeti <a href="http://tssb.hr/" target="_blank" download="web-stranica">ovdje</a></p>
-        <h3>My top 5 Favourite Websites</h3>
-        <ol>
-          <li><a href="https://www.hoyolab.com/circles/2/27/official?page_type=27&page_sort=hot" target="_blank">Hoyolab</a></li>
-          <li><a href="https://www.nytimes.com/games/wordle/index.html"target="_blank">Wordle</a></li>
-          <li><a href="https://hdtoday.gg/"target="_blank">hdtoday</a></li>
-          <li><a href="https://globle-game.com/"target="_blank">Globle</a></li>
-          <li><a href="https://www.nytimes.com/games/connections"target="_blank">connections</a></li>
-        </ol>
-        <h2>IMG element</h2>
-        <!-- slika s veba -->
-        <img src="https://site-547756.mozfiles.com/files/547756/medium/dolphin-sea-marine-smart.jpg" alt="slika dupina" width="600px">
-        <!-- slika s računala -->
-         <br>
-         <img src="./Slike/dolphin.jpg" alt="slika dupina">
-         <br>
-         <h2>It's My Birthday</h2>
-         <h3>On the 16th of June</h3>
-         <img src="https://png.pngtree.com/png-clipart/20250102/original/pngtree-colorful-happy-birthday-hat-and-balloons-png-image_19692697.png" width="400" alt="birthday">
-         <p>What to bring</p>
-         <ol>
-          <li>Torta</li>
-          <li>Apetit</li>
-          <li>Balone</li>
-         </ol>
-         This is where you need to go:
-         <a href="https://maps.app.goo.gl/wMnwLzHHa1GP6p3y7" target="_blank">google map link</a>
-         <!-- Tablice u HTML-u -->
-         <h2>Tablice u HTML-u</h2>
-         <table border="1">
-         <tr>
-          <th colspan="2">Ime i prezime</th>        <!-- table heading(podebljano) -->
-          <th>Razred</th>
-          </tr>
-          <tr>
-            <td>Marko</td> <!-- table data -->
-            <td>Bekić</td>
-            <td rowspan="3">3.E</td>
-          </tr>
-          <tr>
-            <td>Patrik</td>
-            <td>Jagodar</td>
-          </tr>
-          <tr>
-            <td>Ana</td>
-            <td>Čondić</td>
-          </tr>
-         </table>
+<div class="contact">
+    <h2>Kontaktirajte nas</h2>
+    <form method="get">
+        <div class="mb-3">
+            <label for="name">Ime</label>
+            <input type="text" id="ime" placeholder="unesite ime">
+        </div>
 
-         <h1>Zadaci</h1>
-         <h3>Zadatak 1</h3>
-         <table border="1">
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Country</th>
-          </tr>
-          <tr>
-            <td>Harry Depp</td>
-            <td>28</td>
-            <td>Britain</td>
-          </tr>
-          <tr>
-            <td>John Smith</td>
-            <td>35</td>
-            <td>USA</td>
-          </tr>
-          <tr>
-            <td>Rim Krishna</td>
-            <td>35</td>
-            <td>Nepal</td>
-          </tr>
-         </table>
-         <h3>zadatak 2</h3>
-         <table border="1">
-         <tr>
-          <th>S.N</th>
-          <th>Item</th>
-          <th>Quantity</th>
-         </tr>
-         <tr>
-            <td>1</td>
-            <td>Apple</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Mango</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Orange</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td colspan="2">Total</td>
-            <td>5</td>
-          </tr>
-          </table>
-          <h3>zadatak 3</h3>
-          <table border="1">
-            <tr>
-              <th>Name</th>
-              <th>Subject</th>
-              <th>Marks</th>
-            </tr>
-            <tr>
-              <td rowspan="3">Mark Smith</td>
-              <td>English</td>
-              <td>67</td>
-            </tr>
-            <tr>
-              <td>Maths</td>
-              <td>82</td>
-            </tr>
-            <tr>
-              <td>Science</td>
-              <td>91</td>
-            </tr>
-          </table>
-          <h3>zadatak 4</h3>
-          <table border="1">
-            <tr>
-              <th>No.</th>
-              <th>Full Name</th>
-              <th>Position</th>
-              <th>Salary</th>
-              <th>Type</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>Bill Gates</td>
-              <td>Founder Microsoft</td>
-              <td> $1000</td>
-              <td rowspan="4">Company Founder</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Steve Jobs</td>
-              <td>Founder apple</td>
-              <td>$1200</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Larry Page</td>
-              <td> Founder Google</td>
-              <td>$1100</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Mark Zuckeberg</td>
-              <td>Founder Facebook</td>
-              <td>$1300</td>
-            </tr>
-          </table>
-         <body>
+        <div class="mail">
+            <label for="mail" class="form-label">Email</label>
+            <input type="email" id="mail" placeholder="unesite email">
+        </div>
+
+        <div class="datum">
+            <label for="datum"class="form-label">Datum</label>
+            <input type="date" id="date" name="datum">
+        </div>
+
+        <div class="poruka">
+            <label for="poruka" class="poruka">Poruka</label>
+            <textarea name="poruka" id="poruka" rows="5" placeholder="Napišite svoju poruku"></textarea>
+        </div>
+        <div>
+            <button type="submit">Pošalji poruku</button>
+        </div>
+    </form>
+</div>
+
+
+<!-- footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-body-secondary">© 2025 Company, Inc</p> <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+            <use xlink:href="#bootstrap"></use>
+        </svg> </a>
+    <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>

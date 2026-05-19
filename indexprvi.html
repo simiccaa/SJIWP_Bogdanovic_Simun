@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Moja web stranica">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Simun Bogdanovic">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skriptni jezici</title>
+    <!-- Internal CSS -->
+    <style>
+      .drugi {
+        color: red;
+      }
+    </style>
+    <link rel="stylesheet" href="./Styles.css">
+</head>
+<body>
+  <h1>Zadaće:</h1>
+  <ol>
+    <li><a href="/Zadace/Zadaca1.html"target="_blank">Zadaća1</a></li>
+    <li><a href="/Zadace/Zadaca2.html" target="_blank">Zadaća2</a></li>
+    <li><a href="Galerija/filmovi.html" target="_blank">Galerija</a></li>
+    
+  </ol>
+
+  <h2>Dodavanje CSS-a</h2>
+  <ul>
+    <li style="color: blue; ">Inline</li>
+    <li class="drugi">Internal</li>
+    <li class="treci">External</li>
+  </ul>
+
+    <!-- heading elementi -->
+     <h1>Naslov 1</h1>
+     <h2>Naslov 2</h2>
+     <h3>Naslov 3</h3>
+     <h4>Naslov 4</h4>
+     <h5>Naslov 5</h5>
+     <h6>Naslov 6</h6>
+
+     <!-- paragraft element -->
+      <!-- break element -->
+       <!-- hr element -->
+      <p>Lorem ipsum dolor sit amet consectetur <br> <hr>  adipisicing elit. Suscipit natus dolore asperiores facere inventore placeat eligendi ipsum dignissimos! Ipsa quis nemo labore quae, ullam ducimus voluptas voluptatum qui voluptate. Quibusdam!
+      Eveniet ea laboriosam voluptatum, obcaecati placeat dolore! Sapiente suscipit praesentium quis, debitis minima neque omnis distinctio modi, nulla corrupti consequatur cumque voluptatum? Eum quam facere labore beatae molestias eius reiciendis.</p>
+        <h1>Najbolji filmovi</h1>
+        <br>
+      <h2>Moji top 3</h2>
+      <hr>
+      <h3 id="Naslov">The Conjuring 1</h3>
+      <p>Meni najdrazi film</p>
+      <h3>The Conjuring 2</h3>
+      <p> Jedan od najboljih filmova koje sam pogledao</p>
+      <h3>The Conjuring: Last rites</h3>
+      <P> </P>
+
+      <!-- oblikovanje teksta -->
+       <p>  Mi smo <strong> 3.E razred</strong>. Idemo u <em>Tehničku školu </em>. <mark> Razrednik</mark> nam je <sub> prof. </sub> <sup> Benić</sup>. Ima nas <del>24</del> 26 u razredu. </p>
+       <pre>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Dolor ea necessitatibus in 
+        accusantium rem sint aliquid perferendis 
+        iste explicabo veritatis error 
+        delectus vero hic molestias, quas adipisci architecto atque pariatur?
+       </pre>
+       <!-- liste, ul - unordered liste, ol - ordered liste, dl - definition liste -->
+       <h2>Voćni desert u čaši</h2>
+
+       <h3>Sastojci:</h3>
+       <ul type="circle">
+        <li>230 g kreme za kremšnite</li>
+        <li>500 ml hladnog mlijeka</li>
+        <li>3-4 žlice pekmeza od višanja</li>
+       </ul>
+       <h3>Priprema</h3>
+       <ol type="I" start="2">
+        <li>Prah za kremu pomiješati sa pola litre hladnog mlijeka te miksati 2-3 minute dok se ne dobije jednolična krema.</li>
+        <li>Pekmez od višanja rastopiti na blagoj vatri i ohladiti.</li>
+        <li>U desertne čaše rasporediti sloj pripremljene kreme pa žlicu i pol voćnog nadjeva te ponoviti još jednom postupak i završiti sa voćnim slojem. Posipati nasjeckanim pistacijem i staviti u hladnjak na hlađenje.</li>
+       </ol>
+
+       <h2>Definiton liste</h2>
+       <dl>
+        <dt>Struja</dt>
+        <dd>Usmjereno gibanje elektrona kroz vodič</dd>
+        <dt>Napon</dt>
+        <dd>Razlika potencijala između dvije točke</dd>
+       </dl>
+       
+
+       <h2>Nested liste</h2>
+       <ul>
+        <li>A</li>
+        <li>B</li>
+        <ol>
+          <li>B1</li>
+          <li>B2</li>
+          <ul>
+            <li>B2a</li>
+            <ol>
+              <li>B2aa</li>
+              <li>B2ab</li>
+            </ol>
+            <li>B2b</li>
+            <li>B2c</li>
+          </ul>
+
+          <li>B3</li>
+          <ul>
+            <li>B31</li>
+            <li>B32</li>
+          </ul>
+        </ol>
+        <li>C</li>
+       </ul>
+       <!-- <small> <samp> <ims> <blockquote>-->
+        <p draggable="true" > 
+          Lorem <small>dolor sit amet</small>  consectetur <samp>adipisicing</samp> elit. 
+        Dolor ea <ims>necessitatibus</ims>  in 
+        accusantium rem sint aliquid perferendis 
+        iste explicabo veritatis error
+         <blockquote cite="https://www.huxley.net/bnw/four.html">
+    <p>
+      Words can be like X-rays, if you use them properly—they’ll go through
+      anything. You read and you’re pierced.
+        <details></details>  delectus vero hic molestias, quas adipisci architecto atque pariatur?
+        </p>
+
+        <ol type="I">
+          <li>Backgroundskills</li>
+          <ol type="A">
+            <li>Unix Commands</li>
+            <li>Vim text editor</li>
+          </ol>
+          <li>HTML</li>
+          <ol type="A">
+            <li>Minimal page</li>
+            <li>Headings</li>
+            <li>Tags</li>
+            <li>Lists</li>
+            <ol type="i">
+              <li>Unordered</li>
+              <li>Ordered</li>
+              <li>Definition</li>
+              <li>Nested</li>
+            </ol>
+            <li>Links</li>
+            <ol type="i">
+              <li>Absolute</li>
+              <li>Relative</li>
+            </ol>
+            <li>Images</li>
+          </ol>
+          <li>CSS</li>
+          <ol type="A">
+            <li>Anatomy</li>
+            <li>Basic Selectors</li>
+            <ol type="i">
+              <li>Elment</li>
+              <li>Class</li>
+              <li>ID</li>
+              <li>Group</li>
+            </ol>
+            <li>The DOM</li>
+            <li>Advanced Selectors</li>
+            <li>Box model</li>
+          </ol>
+          <li>Programing</li>
+          <ol type="A">
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ol>
+          <li>Database</li>
+          <ol type="A">
+            <li>Flat File</li>
+            <li> Relational</li>
+          </ol>
+        </ul>
+        <!-- Anchor elemet -->
+        <h2> Anchor element</h2>
+        <p>Web stranicu škole možete vidjeti <a href="http://tssb.hr/" target="_blank" download="web-stranica">ovdje</a></p>
+        <h3>My top 5 Favourite Websites</h3>
+        <ol>
+          <li><a href="https://www.hoyolab.com/circles/2/27/official?page_type=27&page_sort=hot" target="_blank">Hoyolab</a></li>
+          <li><a href="https://www.nytimes.com/games/wordle/index.html"target="_blank">Wordle</a></li>
+          <li><a href="https://hdtoday.gg/"target="_blank">hdtoday</a></li>
+          <li><a href="https://globle-game.com/"target="_blank">Globle</a></li>
+          <li><a href="https://www.nytimes.com/games/connections"target="_blank">connections</a></li>
+        </ol>
+        <h2>IMG element</h2>
+        <!-- slika s veba -->
+        <img src="https://site-547756.mozfiles.com/files/547756/medium/dolphin-sea-marine-smart.jpg" alt="slika dupina" width="600px">
+        <!-- slika s računala -->
+         <br>
+         <img src="./Slike/dolphin.jpg" alt="slika dupina">
+         <br>
+         <h2>It's My Birthday</h2>
+         <h3>On the 16th of June</h3>
+         <img src="https://png.pngtree.com/png-clipart/20250102/original/pngtree-colorful-happy-birthday-hat-and-balloons-png-image_19692697.png" width="400" alt="birthday">
+         <p>What to bring</p>
+         <ol>
+          <li>Torta</li>
+          <li>Apetit</li>
+          <li>Balone</li>
+         </ol>
+         This is where you need to go:
+         <a href="https://maps.app.goo.gl/wMnwLzHHa1GP6p3y7" target="_blank">google map link</a>
+         <!-- Tablice u HTML-u -->
+         <h2>Tablice u HTML-u</h2>
+         <table border="1">
+         <tr>
+          <th colspan="2">Ime i prezime</th>        <!-- table heading(podebljano) -->
+          <th>Razred</th>
+          </tr>
+          <tr>
+            <td>Marko</td> <!-- table data -->
+            <td>Bekić</td>
+            <td rowspan="3">3.E</td>
+          </tr>
+          <tr>
+            <td>Patrik</td>
+            <td>Jagodar</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>Čondić</td>
+          </tr>
+         </table>
+
+         <h1>Zadaci</h1>
+         <h3>Zadatak 1</h3>
+         <table border="1">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>Harry Depp</td>
+            <td>28</td>
+            <td>Britain</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>35</td>
+            <td>USA</td>
+          </tr>
+          <tr>
+            <td>Rim Krishna</td>
+            <td>35</td>
+            <td>Nepal</td>
+          </tr>
+         </table>
+         <h3>zadatak 2</h3>
+         <table border="1">
+         <tr>
+          <th>S.N</th>
+          <th>Item</th>
+          <th>Quantity</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Apple</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mango</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Orange</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>5</td>
+          </tr>
+          </table>
+          <h3>zadatak 3</h3>
+          <table border="1">
+            <tr>
+              <th>Name</th>
+              <th>Subject</th>
+              <th>Marks</th>
+            </tr>
+            <tr>
+              <td rowspan="3">Mark Smith</td>
+              <td>English</td>
+              <td>67</td>
+            </tr>
+            <tr>
+              <td>Maths</td>
+              <td>82</td>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td>91</td>
+            </tr>
+          </table>
+          <h3>zadatak 4</h3>
+          <table border="1">
+            <tr>
+              <th>No.</th>
+              <th>Full Name</th>
+              <th>Position</th>
+              <th>Salary</th>
+              <th>Type</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Bill Gates</td>
+              <td>Founder Microsoft</td>
+              <td> $1000</td>
+              <td rowspan="4">Company Founder</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Steve Jobs</td>
+              <td>Founder apple</td>
+              <td>$1200</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry Page</td>
+              <td> Founder Google</td>
+              <td>$1100</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Mark Zuckeberg</td>
+              <td>Founder Facebook</td>
+              <td>$1300</td>
+            </tr>
+          </table>
+         <body>
+</html>
